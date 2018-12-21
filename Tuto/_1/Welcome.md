@@ -38,7 +38,7 @@ const axios = require('axios');
 ```
 
 ### Les fonctions
-Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer d'une URL, vous pouvais placer cette function juste en dessous de `export.run = async(client, message) {`.
+Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer d'une URL, vous pouvais placer cette function juste en dessous de `exports.run = async(client, message) {`.
 
 ```js
 function buffer(data) {
@@ -54,6 +54,6 @@ Ensuite nous allons construire une `fonction asynchrone` en dessous de le foncti
 
 ```js
 async function Welcome(data) {
-
+    //le code canvas  
 }
 ```
