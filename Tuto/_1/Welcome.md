@@ -36,3 +36,24 @@ En dessous de la ligne `'use strict'` vous allez venir ajoutée deux `const`.
 const { Canvas } = require('canvas-constructor');
 const axios = require('axios');
 ```
+
+### Les fonctions
+Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer d'une URL, vous pouvais placer cette function juste en dessous de `export.run = async(client, message) {`.
+
+```js
+function buffer(data) {
+    return axios.get(data, {
+        responseType: 'arraybuffer'
+    })
+    .then((res) => res.data)
+    .catch(err => console.log(err));
+}
+```
+
+Ensuite nous allons construire une `fonction asynchrone` en dessous de le fonction `buffer`.
+
+```js
+async function Welcome(data) {
+
+}
+```
