@@ -187,7 +187,7 @@ message.channel.send({
         attachment: await Welcome(message.author),
         name: "welcome.png"
     }]
-})
+});
 ```
 Et c'est terminer :3
 
@@ -229,7 +229,7 @@ exports.run = async(client, message) => {
             attachment: await Welcome(message.author),
             name: "welcome.png"
         }]
-    })
+    });
 };
 
 exports.help = {
