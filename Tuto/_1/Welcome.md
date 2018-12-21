@@ -159,3 +159,33 @@ exports.help = {
   usage: "welcome"
 };
 ```
+
+### L'envoie de l'image
+
+Voici la dernière partie l'envoie de l'image, juste en dessous de 
+```js
+async function Welcome(data) {
+    return new Canvas(400, 200)
+    .save()
+    .setColor('#303030') 
+    .addRect(0, 0, 400, 200)
+    .setColor('white') 
+    .addCircle(195, 84, 68) 
+    .addRoundImage(await buffer(data.displayAvatarURL), 131, 20, 128, 128, 64)
+    .restore()
+    .setColor('white')
+    .setTextAlign("center")
+    .setTextFont("bold 16pt sans serif ")
+    .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
+    .toBuffer();
+}
+```
+Nous allons ajouter se petit bloc de ligne
+```js
+message.channel.send({
+    files: [{
+        attachment: await Welcome(message.author),
+        name: "welcome.png"
+    }]
+})
+```
