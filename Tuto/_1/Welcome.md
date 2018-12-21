@@ -6,7 +6,7 @@ Le rendu final du tutoriel
 
 
 Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer `canvas`, `canvas-constructor` et `axios`.
-```js
+```npm
 npm install --s axios
 npm install --s canvas
 nmp install --s canvas-constructor
