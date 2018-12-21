@@ -109,6 +109,11 @@ En dessous nous allons venir définir un bloc d'information entourée par les fo
 .addCircle(195, 84, 68) //On crée un cercle blanc à 195px sur l'axe X et 84px sur l'axe Y avec une taille de raduis de 68px
 .addRoundImage(await buffer(data.displayAvatarURL), 131, 20, 128, 128, 64) //On ajoute l'avatar de l'user
 .restore() //Fin de la création du bloc
+.setColor('white') //On définie une nouvelle fois la color "white" en dehor du block pour la police du texte
+.setTextAlign("center") //On vient centré le texte au centre de l'image
+.setTextFont("bold 16pt sans serif ") //On définie une police (Pas de soucis cette police et compatible tout OS)
+.addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20) //On ajoute un petit text responsive pour évite les débordement
+.toBuffer(); //On déclare la fin de la toile
 ```
 PS: `.addRoundImage(X, Y, Largeur, Hauteur, Radius)`
 
@@ -138,6 +143,11 @@ exports.run = async(client, message) => {
         .addCircle(195, 84, 68) 
         .addRoundImage(await buffer(data.displayAvatarURL), 131, 20, 128, 128, 64)
         .restore()
+        .setColor('white')
+        .setTextAlign("center")
+        .setTextFont("bold 16pt sans serif ")
+        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
+        .toBuffer();
     }
 
 };
