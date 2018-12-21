@@ -27,3 +27,12 @@ exports.help = {
   usage: "welcome"
 };
 ```
+
+### Les modules requis
+
+En dessous de la ligne `'use strict'` vous allez venir ajoutée deux `const`.
+
+```js
+const { Canvas } = require('canvas-constructor');
+const axios = require('axios');
+```
