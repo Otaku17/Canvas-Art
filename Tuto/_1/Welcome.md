@@ -101,15 +101,9 @@ return new Canvas(400, 200)
 
 En dessous nous allons venir définir un bloc d'information entourée par les fonctions `save()` & `restore()`
 
-Début de la création du bloc.
+
 ```js
-.save()
-```
-Nous allons définir une coleur dans le bloc
-```js
-.setColor('#303030')
-```
-Fin de la création du bloc
-```js
-.restore()
+.save() //Début de la création du bloc.
+.setColor('#303030') //Nous allons définir une coleur dans le bloc
+.restore() //Fin de la création du bloc
 ```
