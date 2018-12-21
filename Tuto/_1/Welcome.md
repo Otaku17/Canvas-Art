@@ -87,3 +87,14 @@ exports.help = {
   usage: "welcome"
 };
 ```
+
+### Le code Canvas
+
+C'est surement la partie que vous attendiez tous, nous allons créés notre `welcome`.
+Dans la fonction `Welcome` vous allez venir remplacer `//le code canvas` par le code qui va suivre.
+
+On va créé le template de l'image, avec les valeurs `400, 200`. Cela signifie largeur et hauteur donc `400 de largeur` & `200 de hauteur`.
+
+```js
+return new Canvas(400, 200)
+```
