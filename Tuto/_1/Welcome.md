@@ -12,3 +12,6 @@ npm install --s canvas
 nmp install --s canvas-constructor
 ```
 ### Le code de base
+
+Une fois que vous avez installé les modules plus haut vous allez créé un fichier `welcome.js`que nous allons compléter avec le code plus bas.
+
