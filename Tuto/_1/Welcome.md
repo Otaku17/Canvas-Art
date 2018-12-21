@@ -101,12 +101,13 @@ return new Canvas(400, 200)
 
 En dessous nous allons venir définir un bloc d'information entourée par les fonctions `save()` & `restore()`
 
-
 ```js
 .save() //Début de la création du bloc.
 .setColor('#303030') //Nous allons définir une coleur dans le bloc
 .addRect(0, 0, 400, 200) //Celà va nous crée un rectangle de 400, 200 avec la couleur '#303030'
 .setColor('white') //Ici on vient définir la couleur blanche pour le cercle qui se trouve derrière l'avatar
 .addCircle(195, 84, 68) //On crée un cercle blanc à 195px sur l'axe X et 84px sur l'axe Y avec une taille de raduis de 68px
+.addRoundImage(await buffer(member.displayAvatarURL), 131, 20, 128, 128, 64) //On ajoute l'avatar de l'user
 .restore() //Fin de la création du bloc
 ```
+PS: `.addRoundImage(X, Y, Largeur, Hauteur, Radius)`
