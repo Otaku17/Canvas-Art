@@ -15,3 +15,15 @@ nmp install --s canvas-constructor
 
 Une fois que vous avez installé les modules plus haut vous allez créé un fichier `welcome.js`que nous allons compléter avec le code plus bas.
 
+```js
+'use strict';
+exports.run = async(client, message) => {
+  // Votre code.
+};
+exports.help = {
+  name: "welcome",
+  category: "utility",
+  description: "Génére votre welcome.",
+  usage: "welcome"
+};
+```
