@@ -57,3 +57,33 @@ async function Welcome(data) {
     //le code canvas  
 }
 ```
+Logiquement votre code devrait ressembler à ça  si vous avez tout suivi.
+
+```js
+'use strict';
+
+const { Canvas } = require('canvas-constructor');
+const axios = require('axios');
+
+exports.run = async(client, message) => {
+
+    function buffer(data) {
+        return axios.get(data, {
+            responseType: 'arraybuffer'
+        })
+        .then((res) => res.data)
+        .catch(err => console.log(err));
+    }
+
+    async function Welcome(data) {
+        //le code canvas  
+    }
+
+};
+exports.help = {
+  name: "welcome",
+  category: "utility",
+  description: "Génére votre welcome.",
+  usage: "welcome"
+};
+```
