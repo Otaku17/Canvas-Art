@@ -9,7 +9,7 @@ Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer 
 ```
 npm install --s axios
 npm install --s canvas
-nmp install --s canvas-constructor
+npm install --s canvas-constructor
 ```
 ### Le code de base
 
