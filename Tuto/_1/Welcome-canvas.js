@@ -15,9 +15,9 @@ exports.run = async(client, message) => {
 
     function responsiveText(canvas, text) {
         const SizeCtx = canvas.getContext('2d');
-        let fontSize = 21;
+        let fontSize = 18;
         do {
-            SizeCtx.font = `bold ${fontSize -= 5}pt sans serif`;
+            SizeCtx.font = `bold ${fontSize -= 2}pt sans serif`;
         } while (SizeCtx.measureText(text).width > canvas.width - 15);
         return SizeCtx.font;
     }
