@@ -110,7 +110,7 @@ En dessous nous allons venir définir un bloc d'information entouré par les fon
 .addRoundImage(await buffer(data.displayAvatarURL), 131, 20, 128, 128, 64) //On ajoute l'avatar de l'user
 .restore() //Fin de la création du bloc
 ```
-En dessous du block nous allons ajouter quelque ligne
+En dessous du bloc nous allons ajoutés quelques lignes
 
 ```js
 .setColor('white') //On définie une nouvelle fois la color "white" en dehor du block pour la police du texte
