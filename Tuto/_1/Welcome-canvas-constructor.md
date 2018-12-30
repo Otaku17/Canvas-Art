@@ -38,7 +38,7 @@ const axios = require('axios');
 ```
 
 ### Les fonctions
-Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer64 d'une URL, vous pouvais placer cette fonction à la place de `//Votre code`.
+Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer64 d'une URL, vous pouvez placer cette fonction à la place de `//Votre code`.
 
 ```js
 function buffer(data) {
@@ -50,14 +50,14 @@ function buffer(data) {
 }
 ```
 
-Ensuite nous allons construire une `fonction asynchrone` en dessous de le fonction `buffer`.
+Ensuite nous allons construire une `fonction asynchrone` en dessous de la fonction `buffer`.
 
 ```js
 async function Welcome(data) {
     //le code canvas  
 }
 ```
-Logiquement votre code devrait ressembler à ça  si vous avez tout suivi.
+Logiquement votre code devrait ressembler à ça si vous avez tout suivi.
 
 ```js
 'use strict';
@@ -99,7 +99,7 @@ On va créé le template de l'image, avec les valeurs `400, 200`. Cela signifie 
 return new Canvas(400, 200)
 ```
 
-En dessous nous allons venir définir un bloc d'information entourée par les fonctions `save()` & `restore()`
+En dessous nous allons venir définir un bloc d'information entouré par les fonctions `save()` & `restore()`
 
 ```js
 .save() //Début de la création du bloc.
@@ -109,6 +109,10 @@ En dessous nous allons venir définir un bloc d'information entourée par les fo
 .addCircle(195, 84, 68) //On crée un cercle blanc à 195px sur l'axe X et 84px sur l'axe Y avec une taille de raduis de 68px
 .addRoundImage(await buffer(data.displayAvatarURL), 131, 20, 128, 128, 64) //On ajoute l'avatar de l'user
 .restore() //Fin de la création du bloc
+```
+En dessous du block nous allons ajouter quelque ligne
+
+```js
 .setColor('white') //On définie une nouvelle fois la color "white" en dehor du block pour la police du texte
 .setTextAlign("center") //On vient centré le texte au centre de l'image
 .setTextFont("bold 16pt sans serif ") //On définie une police (Pas de soucis cette police et compatible tout OS)
@@ -117,7 +121,7 @@ En dessous nous allons venir définir un bloc d'information entourée par les fo
 ```
 PS: `.addRoundImage(X, Y, Largeur, Hauteur, Radius)`
 
-On va vérifier si vous suivez toujours, si c'est le cas votre code toi ressembler à ça.
+Nous allons vérifiés, si vous suivez toujours, si c'est le cas votre code doit ressemblé à ça.
 ```js
 'use strict';
 
@@ -162,7 +166,7 @@ exports.help = {
 
 ### L'envoie de l'image
 
-Voici la dernière partie l'envoie de l'image, juste en dessous de 
+Voici la dernière partie l'envoie de l'image, juste en dessous de ceci:
 ```js
 async function Welcome(data) {
     return new Canvas(400, 200)
@@ -180,7 +184,7 @@ async function Welcome(data) {
     .toBuffer();
 }
 ```
-Nous allons ajouter se petit bloc de ligne
+Nous allons ajoutés ce petit bloc de ligne
 ```js
 message.channel.send({
     files: [{
