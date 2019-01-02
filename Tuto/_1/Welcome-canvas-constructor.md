@@ -5,7 +5,7 @@ Le rendu final du tutoriel
 [![welcomeImg](https://cdn.discordapp.com/attachments/525291529124970502/528308020313063435/welcome-canvas.png)](https://github.com/Otaku17/canvas-center/blob/master/Tuto/_1/welcome.js)
 
 
-Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer `canvas`, `canvas-constructor` et `axios`.
+Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer `canvas`, `canvas-constructor` et `axios`:
 ```
 npm install --s axios
 npm install --s canvas
@@ -13,7 +13,7 @@ npm install --s canvas-constructor
 ```
 ### Le code de base
 
-Une fois que vous avez installé les modules plus haut vous allez créé un fichier `welcome.js`que nous allons compléter avec le code plus bas.
+Une fois que vous avez installé les modules plus haut vous allez créer un fichier `welcome.js`que nous allons compléter avec le code plus bas:
 
 ```js
 'use strict';
@@ -30,7 +30,7 @@ exports.help = {
 
 ### Les modules requis
 
-En dessous de la ligne `'use strict'` vous allez venir ajoutée deux `const`.
+En dessous de la ligne `'use strict'` vous allez venir ajouter deux `const`:
 
 ```js
 const { Canvas } = require('canvas-constructor');
@@ -38,7 +38,7 @@ const axios = require('axios');
 ```
 
 ### Les fonctions
-Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer64 d'une URL, vous pouvez placer cette fonction à la place de `//Votre code`.
+Nous allons faire une `fonction` avec le module `axios` pour pouvoir récupérer le buffer64 d'une URL, vous pouvez placer cette fonction à la place de `//Votre code`:
 
 ```js
 function buffer(data) {
@@ -57,7 +57,7 @@ async function Welcome(data) {
     //le code canvas  
 }
 ```
-Logiquement votre code devrait ressembler à ça si vous avez tout suivi.
+Logiquement votre code devrait ressembler à ça si vous avez tout suivi:
 
 ```js
 'use strict';
@@ -90,16 +90,16 @@ exports.help = {
 
 ### Le code Canvas
 
-C'est surement la partie que vous attendiez tous, nous allons créés notre `welcome`.
+C'est surement la partie que vous attendiez tous, nous allons créer notre `welcome`.
 Dans la fonction `Welcome` vous allez venir remplacer `//le code canvas` par le code qui va suivre.
 
-On va créé le template de l'image, avec les valeurs `400, 200`. Cela signifie largeur et hauteur donc `400 de largeur` & `200 de hauteur`.
+On va créer le template de l'image, avec les valeures `400, 200`. Cela signifie largeur et hauteur donc `400 de largeur` & `200 de hauteur`.
 
 ```js
 return new Canvas(400, 200)
 ```
 
-En dessous nous allons venir définir un bloc d'information entouré par les fonctions `save()` & `restore()`
+En dessous, nous allons venir définir un bloc d'information entouré par les fonctions `save()` & `restore()`:
 
 ```js
 .save() //Début de la création du bloc.
@@ -110,7 +110,7 @@ En dessous nous allons venir définir un bloc d'information entouré par les fon
 .addRoundImage(await buffer(data.displayAvatarURL), 131, 20, 128, 128, 64) //On ajoute l'avatar de l'user
 .restore() //Fin de la création du bloc
 ```
-En dessous du bloc nous allons ajoutés quelques lignes
+En dessous du bloc nous allons ajouter quelques lignes
 
 ```js
 .setColor('white') //On définie une nouvelle fois la color "white" en dehor du block pour la police du texte
@@ -121,7 +121,7 @@ En dessous du bloc nous allons ajoutés quelques lignes
 ```
 PS: `.addRoundImage(X, Y, Largeur, Hauteur, Radius)`
 
-Nous allons vérifiés, si vous suivez toujours, si c'est le cas votre code doit ressemblé à ça.
+Nous allons vérifier, si vous suivez toujours, si c'est le cas votre code doit ressembler à ça:
 ```js
 'use strict';
 
@@ -166,7 +166,7 @@ exports.help = {
 
 ### L'envoie de l'image
 
-Voici la dernière partie l'envoie de l'image, juste en dessous de ceci:
+Voici la dernière partie "l'envoie de l'image", juste en dessous de ceci:
 ```js
 async function Welcome(data) {
     return new Canvas(400, 200)
@@ -184,7 +184,7 @@ async function Welcome(data) {
     .toBuffer();
 }
 ```
-Nous allons ajoutés ce petit bloc de ligne
+Nous allons ajouter ce petit bloc de ligne:
 ```js
 message.channel.send({
     files: [{
@@ -193,7 +193,7 @@ message.channel.send({
     }]
 });
 ```
-Et c'est terminer :3
+Et c'est terminé :3
 
 Rendu final du code:
 ```js
