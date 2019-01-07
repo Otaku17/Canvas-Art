@@ -149,7 +149,7 @@ exports.run = async(client, message) => {
         .restore()
         .setColor('white')
         .setTextAlign("center")
-        .setTextFont("bold 16pt sans serif ")
+        .setTextFont("bold 16pt sans serif")
         .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
         .toBuffer();
     }
@@ -179,7 +179,7 @@ async function Welcome(data) {
     .restore()
     .setColor('white')
     .setTextAlign("center")
-    .setTextFont("bold 16pt sans serif ")
+    .setTextFont("bold 16pt sans serif")
     .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
     .toBuffer();
 }
@@ -223,7 +223,7 @@ exports.run = async(client, message) => {
         .restore()
         .setColor('white')
         .setTextAlign("center")
-        .setTextFont("bold 16pt sans serif ")
+        .setTextFont("bold 16pt sans serif")
         .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
         .toBuffer();
     }
