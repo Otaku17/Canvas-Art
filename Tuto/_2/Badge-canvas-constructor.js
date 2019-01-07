@@ -1,4 +1,8 @@
 'use strict';
+
+const { Canvas } = require('canvas-constructor');
+const axios = require('axios');
+
 exports.run = async(client, message) => {
 
     function buffer(data) {
@@ -18,14 +22,11 @@ exports.run = async(client, message) => {
         .addRect(0, 0, 20, 150)
         .addBeveledRect(100, 25, 195, 6, 5)
         .addBeveledRect(25, 110, 270, 6, 5)
-        .addBeveledImage(await buffer(data.displayAvatarURL({
-            format: 'png', 
-            size: 512
-        })), 15, 25, 80, 80, 6)
+        .addBeveledImage(await buffer(data.displayAvatarURL), 15, 25, 80, 80, 6)
         .restore()
         .setColor("white")
         .setTextFont('9pt sans serif')
-        .addText(`${client.options.totalShardCount} shard`, 105, 55, 115, 20)
+        .addText(`${client.options.shardCount} shard`, 105, 55, 115, 20)
         .addText(`${client.guilds.size} guilds`, 105, 75, 115, 20)
         .addText(`${client.users.size} members`, 105, 95, 115, 20)
         .setTextFont('10.5pt sans serif')
@@ -34,7 +35,7 @@ exports.run = async(client, message) => {
         .addResponsiveText('Add a small text', 150, 138, 250, 100)
         .toBuffer();
     }
-
+    
     message.channel.send({
         files: [{
             attachment: await Badge(client.user),
