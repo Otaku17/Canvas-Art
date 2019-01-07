@@ -109,7 +109,7 @@ En dessous, nous allons venir définir un bloc d'information entouré par les fo
 .addRect(0, 0, 20, 150)
 .addBeveledRect(100, 25, 195, 6, 5)
 .addBeveledRect(25, 110, 270, 6, 5)
-.addBeveledImage(await client.buffer(data.displayAvatarURL({
+.addBeveledImage(await buffer(data.displayAvatarURL({
     format: 'png', 
     size: 512
 })), 15, 25, 80, 80, 6)
@@ -158,7 +158,7 @@ exports.run = async(client, message) => {
         .addRect(0, 0, 20, 150)
         .addBeveledRect(100, 25, 195, 6, 5)
         .addBeveledRect(25, 110, 270, 6, 5)
-        .addBeveledImage(await client.buffer(data.displayAvatarURL({
+        .addBeveledImage(await buffer(data.displayAvatarURL({
             format: 'png', 
             size: 512
         })), 15, 25, 80, 80, 6)
@@ -198,7 +198,7 @@ async function Badge(data) {
     .addRect(0, 0, 20, 150)
     .addBeveledRect(100, 25, 195, 6, 5)
     .addBeveledRect(25, 110, 270, 6, 5)
-    .addBeveledImage(await client.buffer(data.displayAvatarURL({
+    .addBeveledImage(await buffer(data.displayAvatarURL({
         format: 'png', 
         size: 512
     })), 15, 25, 80, 80, 6)
@@ -252,7 +252,7 @@ exports.run = async(client, message) => {
         .addRect(0, 0, 20, 150)
         .addBeveledRect(100, 25, 195, 6, 5)
         .addBeveledRect(25, 110, 270, 6, 5)
-        .addBeveledImage(await client.buffer(data.displayAvatarURL({
+        .addBeveledImage(await buffer(data.displayAvatarURL({
             format: 'png', 
             size: 512
         })), 15, 25, 80, 80, 6)
