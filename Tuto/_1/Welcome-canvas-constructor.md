@@ -1,9 +1,8 @@
-# Welcome
-
-Le rendu final du tutoriel
-
-[![welcomeImg](https://cdn.discordapp.com/attachments/525291529124970502/528308020313063435/welcome-canvas.png)](https://github.com/Otaku17/canvas-center/blob/master/Tuto/_1/welcome.js)
-
+<div align="center">
+  <h1>Welcome</h1>
+  <p>Le rendu final du tutoriel</p>
+  <img width="195" height="194" src="https://cdn.discordapp.com/attachments/525291529124970502/528308020313063435/welcome-canvas.png">
+</div>
 
 Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer `canvas`, `canvas-constructor` et `axios`:
 ```
