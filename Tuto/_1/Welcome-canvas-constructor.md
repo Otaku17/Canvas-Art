@@ -2,8 +2,9 @@
   <h1>Welcome</h1>
   <p>Le rendu final du tutoriel</p>
   <img width="400" height="200" src="https://cdn.discordapp.com/attachments/525291529124970502/528308020313063435/welcome-canvas.png">
-  <br>
 </div>
+
+
 
 Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer `canvas`, `canvas-constructor` et `axios`:
 ```
