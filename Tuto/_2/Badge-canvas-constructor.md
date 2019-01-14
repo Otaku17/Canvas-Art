@@ -1,9 +1,12 @@
-# Badge
+<div align="center">
+  <h1>Badge</h1>
+  <p>Le rendu final du tutoriel</p>
+  <img width="400" height="200" src="https://cdn.discordapp.com/attachments/528933009072717825/531814577642536961/badge-canvas.png">
+</div>
 
-Le rendu final du tutoriel
 
-[![welcomeImg](https://cdn.discordapp.com/attachments/528933009072717825/531814577642536961/badge-canvas.png)](https://github.com/Otaku17/canvas-center/blob/master/Tuto/_2/badge.js)
-
+<p>
+<br>
 
 Bon, maintenant que vous avez vu ce que vous allez créer, vous allez installer `canvas`, `canvas-constructor` et `axios`:
 ```
@@ -272,4 +275,4 @@ exports.help = {
     usage: "badge"
 };
 ```
-
+</p>
