@@ -3,9 +3,4 @@
      /Sans_titre_1.png">
 </p>
 
-<div align="center">
-  <p>
-    <a href="https://discord.gg/WpVXjBd"><img src="https://discordapp.com/api/guilds/466201126400688128/widget.png" alt="Discord"/>
-    </a>
-  </p>
-</div>
+
