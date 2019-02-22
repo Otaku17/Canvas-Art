@@ -119,7 +119,7 @@ En dessous du bloc nous allons ajouter quelques lignes
 .setColor('white') //On définie une nouvelle fois la color "white" en dehor du block pour la police du texte
 .setTextAlign("center") //On vient centré le texte au centre de l'image
 .setTextFont("bold 16pt sans serif ") //On définie une police (Pas de soucis cette police et compatible tout OS)
-.addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20) //On ajoute un petit text responsive pour évite les débordement
+.addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375) //On ajoute un petit text responsive pour évite les débordement
 .toBuffer(); //On déclare la fin de la toile
 ```
 PS: `.addRoundImage(X, Y, Largeur, Hauteur, Radius)`
@@ -153,7 +153,7 @@ exports.run = async(client, message) => {
         .setColor('white')
         .setTextAlign("center")
         .setTextFont("bold 16pt sans serif")
-        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
+        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375)
         .toBuffer();
     }
 
@@ -183,7 +183,7 @@ async function Welcome(data) {
     .setColor('white')
     .setTextAlign("center")
     .setTextFont("bold 16pt sans serif")
-    .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
+    .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375)
     .toBuffer();
 }
 ```
@@ -227,7 +227,7 @@ exports.run = async(client, message) => {
         .setColor('white')
         .setTextAlign("center")
         .setTextFont("bold 16pt sans serif")
-        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
+        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375)
         .toBuffer();
     }
     
