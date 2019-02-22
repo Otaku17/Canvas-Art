@@ -25,7 +25,7 @@ exports.run = async(client, message) => {
         .setColor('white')
         .setTextAlign("center")
         .setTextFont("bold 16pt sans serif ")
-        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375, 20)
+        .addResponsiveText(`Welcome to ${data.tag}`, 200, 184, 375)
         .toBuffer();
     }
     
