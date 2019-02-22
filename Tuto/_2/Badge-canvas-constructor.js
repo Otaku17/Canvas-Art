@@ -26,13 +26,13 @@ exports.run = async(client, message) => {
         .restore()
         .setColor("white")
         .setTextFont('9pt sans serif')
-        .addText(`${data.options.shardCount} shard`, 105, 55, 115, 20)
-        .addText(`${data.guilds.size} guilds`, 105, 75, 115, 20)
-        .addText(`${data.users.size} members`, 105, 95, 115, 20)
+        .addText(`${data.options.shardCount} shard`, 105, 55, 115)
+        .addText(`${data.guilds.size} guilds`, 105, 75, 115)
+        .addText(`${data.users.size} members`, 105, 95, 115)
         .setTextFont('10.5pt sans serif')
         .setTextAlign('center')
         .addResponsiveText(data.user.username, 150, 20, 285)
-        .addResponsiveText('Add a small text', 150, 138, 250, 100)
+        .addResponsiveText('Add a small text', 150, 138, 250)
         .toBuffer();
     }
     
